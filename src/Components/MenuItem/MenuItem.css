@@ -1,0 +1,112 @@
+.menu-container {
+  max-width: 940px;
+  margin: 0 auto 40px auto;
+  background: rgba(22, 17, 13, 0.98);
+  border: 2px solid #ffc857;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px #000c;
+  padding: 38px 40px 22px 40px;
+  position: relative;
+}
+.appetizer-title {
+  font-family: 'Montserrat', serif;
+  color: #ffc857;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 28px;
+  border-bottom: 2px solid #ffc857;
+  letter-spacing: 2px;
+  padding-bottom: 8px;
+}
+.appetizer-table {
+  display: flex;
+  gap: 38px;
+}
+.appetizer-col {
+  width: 50%;
+}
+.app-row {
+  display: flex;
+  align-items: baseline;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.12rem;
+  color: #fff;
+  border-bottom: 1px dashed #ffc857;
+  padding: 8px 0 6px 0;
+  margin-bottom: 16px;
+  position: relative;
+}
+.app-name {
+  font-weight: 700;
+  color: #fff;
+  min-width: 160px;
+}
+.dots {
+  flex: 1;
+  border-bottom: 1.5px dotted #ffc857;
+  margin: 0 10px;
+  height: 17px;
+  display: block;
+}
+.app-price {
+  font-weight: 700;
+  color: #ffc857;
+  min-width: 40px;
+  font-size: 1.14rem;
+}
+.app-desc {
+  font-size: 0.94rem;
+  color: #bbb;
+  font-style: italic;
+  margin-left: 4px;
+  display: block;
+}
+.salad-section {
+  margin: 40px auto 8px auto;
+  background: rgba(30, 22, 16, 0.97);
+  border: 2px solid #ffc857;
+  border-radius: 16px;
+  padding: 18px 24px 14px 24px;
+  max-width: 540px;
+}
+.salad-title {
+  font-family: 'Montserrat', serif;
+  color: #ffc857;
+  font-size: 1.32rem;
+  text-align: center;
+  font-weight: 900;
+  border-bottom: 2px solid #ffc857;
+  padding-bottom: 4px;
+}
+.salad-opt {
+  color: #fffbe8;
+  text-align: center;
+  font-size: 1.03rem;
+  margin-bottom: 8px;
+  padding-top: 5px;
+}
+.salad-table {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 46px;
+  margin-top: 10px;
+}
+.salad-row {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.09rem;
+  color: #ffc857;
+}
+.salad-name {
+  color: #fff;
+  font-weight: 700;
+  margin-right: 8px;
+}
+.salad-price {
+  color: #ffc857;
+  font-weight: 700;
+  margin-left: 12px;
+}

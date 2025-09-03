@@ -1,0 +1,296 @@
+/* Add Kelly Slab import at the top */
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Oswald:wght@300;400;500;600;700&display=swap');
+
+.menu-section-wrapper {
+  max-width: 1100px;
+  margin: 15px auto;
+  position: relative;
+}
+
+.menu-section {
+  background: rgba(0, 0, 0, 0.85);
+  border: 2px solid #c9a96e;
+  padding: 40px 70px;
+  position: relative;
+  backdrop-filter: blur(2px);
+}
+
+/* Decorative images - EXTRA LARGE SIZES */
+.decor-img { 
+  position: absolute; 
+  z-index: 10; 
+  pointer-events: none; 
+}
+
+.decor-skewer { 
+  top: -45px;        /* UPDATED for larger size */
+  left: -55px;       /* UPDATED for larger size */
+  width: 180px;      /* INCREASED from 150px to 180px */
+}
+
+.decor-platter { 
+  top: -35px;        /* UPDATED for larger size */
+  right: -55px;      /* UPDATED for larger size */
+  width: 180px;      /* INCREASED from 150px to 180px */
+}
+
+.decor-sandwich { 
+  left: -70px;       /* UPDATED for larger size */
+  bottom: -35px;     /* UPDATED for larger size */
+  width: 140px;      /* INCREASED from 120px to 140px */
+}
+
+.salads-bowl { 
+  position: absolute; 
+  right: -45px;      /* UPDATED for larger size */
+  top: -45px;        /* UPDATED for larger size */
+  width: 130px;      /* INCREASED from 110px to 130px */
+  z-index: 10; 
+}
+
+/* Title section - LINES DIRECTLY BEFORE/AFTER TEXT */
+.appetizers-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu-title {
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  flex: 0 0 auto;
+  padding: 0 20px;
+}
+
+.left-line, .right-line {
+  background: #c9a96e;
+  border: none;
+  height: 2px;
+  width: 120px;
+  flex: 0 0 120px;
+}
+
+/* Two-column layout */
+.menu-table { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 80px;
+  margin-bottom: 30px;
+}
+
+.menu-table-col { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 16px;
+}
+
+/* Individual menu items */
+.menu-item-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.menu-item-header {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 6px;
+  width: 100%;
+}
+
+/* INCREASED SIZE: Food names */
+.item-name {
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;        /* INCREASED from 0.95rem to 1.1rem */
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.dots {
+  flex: 1;
+  height: 1px;
+  background: repeating-linear-gradient(
+    to right, 
+    #c9a96e 0, 
+    #c9a96e 3px, 
+    transparent 3px, 
+    transparent 8px
+  );
+  margin: 0 12px;
+  align-self: end;
+  margin-bottom: 4px;
+}
+
+/* INCREASED SIZE: Prices */
+.item-price {
+  font-family: 'Oswald', sans-serif;
+  color: #c9a96e;
+  font-weight: 700;
+  font-size: 1.15rem;       /* INCREASED from 1rem to 1.15rem */
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* INCREASED SIZE: Ingredient descriptions */
+.item-desc {
+  font-family: 'Kelly Slab', serif;
+  color: #ccc;
+  font-style: italic;
+  font-size: 0.95rem;       /* INCREASED from 0.85rem to 0.95rem */
+  line-height: 1.4;
+  margin-left: 0;
+  font-weight: 400;
+  opacity: 0.75;
+  margin-top: 5px;
+}
+
+/* Salads section */
+.salad-box {
+  background: transparent;
+  border: 2px dashed #c9a96e;
+  padding: 20px 40px;
+  position: relative;
+  margin-top: 30px;
+}
+
+.salads-bowl img { 
+  width: 100%; 
+  border-radius: 50%; 
+}
+
+.menu-title-salad {
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: center;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #c9a96e;
+  padding-bottom: 8px;
+}
+
+/* INCREASED SIZE: Salad option text */
+.salad-opt {
+  font-family: 'Kelly Slab', serif;
+  color: #ccc;
+  text-align: center;
+  font-size: 1rem;          /* INCREASED from 0.9rem to 1rem */
+  margin-bottom: 18px;
+  font-weight: 400;
+  opacity: 0.8;
+  font-style: italic;
+}
+
+.salad-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.salad-cell {
+  display: flex;
+  align-items: baseline;
+  flex: 1;
+}
+
+/* INCREASED SIZE: Salad names */
+.salad-name {
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;        /* INCREASED from 0.95rem to 1.1rem */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* INCREASED SIZE: Salad prices */
+.salad-price {
+  font-family: 'Oswald', sans-serif;
+  color: #c9a96e;
+  font-weight: 700;
+  font-size: 1.15rem;       /* INCREASED from 1rem to 1.15rem */
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Dotted line for salads */
+.salad-cell .dots {
+  flex: 1;
+  height: 1px;
+  background: repeating-linear-gradient(
+    to right, 
+    #c9a96e 0, 
+    #c9a96e 3px, 
+    transparent 3px, 
+    transparent 8px
+  );
+  margin: 0 8px;
+  align-self: end;
+  margin-bottom: 4px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .menu-section {
+    padding: 30px 20px;
+  }
+  
+  .menu-table {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .appetizers-title-row {
+    flex-direction: column;
+    gap: 15px;
+    max-width: 100%;
+  }
+  
+  .left-line, .right-line {
+    width: 80px;
+  }
+  
+  .salad-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .decor-img {
+    width: 120px;        /* Larger on mobile too */
+  }
+  
+  .salads-bowl {
+    width: 100px;        /* Adjusted for mobile */
+  }
+  
+  /* Responsive font sizes */
+  .item-name, .salad-name {
+    font-size: 1rem;
+  }
+  
+  .item-price, .salad-price {
+    font-size: 1.05rem;
+  }
+  
+  .item-desc {
+    font-size: 0.9rem;
+  }
+}

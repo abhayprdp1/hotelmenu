@@ -1,0 +1,12 @@
+body {
+  background:
+    url('/public/images/left.png') left center no-repeat,
+    /* url('/images/Frame (2).png') right center no-repeat, */
+    #191716;
+  background-size:
+    auto 90vh,
+    auto 90vh,
+    auto;
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+}

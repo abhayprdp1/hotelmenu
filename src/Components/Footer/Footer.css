@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 50px 0 0 0;
+  margin-top: 50px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 0 40px;
+  align-items: stretch;
+}
+
+/* All sections get the same border styling */
+.footer-section,
+.footer-center {
+  border: 1px solid #c9a96e;
+  border-radius: 12px;
+  padding: 40px 35px;
+  background: rgba(0, 0, 0, 0.9);
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ONLY TEXT ALIGNMENT CHANGE for first and third sections */
+.footer-section {
+  text-align: center;
+}
+
+.footer-title {
+  color: #c9a96e;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.footer-icon {
+  font-size: 1.2rem;
+  min-width: 22px;
+  color: #c9a96e;
+}
+
+.footer-text {
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.footer-address {
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Center Logo Section - UNCHANGED but with Oswald font */
+.footer-center {
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.logo-icon {
+  font-size: 3.5rem;
+  color: #c9a96e;
+  transform: rotate(45deg);
+}
+
+.logo-text {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.logo-main {
+  color: #c9a96e;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+/* Bottom Copyright Section */
+.footer-bottom {
+  background: rgba(0, 0, 0, 0.95);
+  margin-top: 60px;
+  padding: 25px 0;
+  border-top: 1px solid #333;
+}
+
+.footer-bottom-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.copyright {
+  color: #888;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-link {
+  color: #888;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.footer-link:hover {
+  color: #c9a96e;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 800px;
+  }
+  
+  .footer-section,
+  .footer-center {
+    padding: 30px 25px;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 0 20px;
+    gap: 30px;
+  }
+  
+  .footer-section,
+  .footer-center {
+    padding: 25px 20px;
+  }
+  
+  .footer-bottom-container {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .footer-links {
+    justify-content: center;
+    gap: 30px;
+  }
+}

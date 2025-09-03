@@ -1,0 +1,14 @@
+html, body, #root {
+  margin: 0;
+  min-height: 100vh;
+  background: #191716;
+  color: #efd170;
+  font-family: 'Montserrat', Arial, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+  font-size: 16px;
+  
+}
+a, button { font-family: inherit; }
